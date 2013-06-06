@@ -150,7 +150,7 @@ class CodeRay::Scanners::Lua < CodeRay::Scanners::Scanner
 
     add_boring = ->(fluff) do
       fluff.scan(/((\s+)|(\S+))/).each do |text,ws,nws|
-        tokens.text_token(text, ws ? :space : :content)
+        tokens.text_token(text, ws ? :space : :plain)
       end
     end
 

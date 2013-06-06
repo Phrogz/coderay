@@ -76,7 +76,7 @@ module CodeRay
     :eyecatcher          => 'eyecatcher',
     
     :ident               => false,
-    :operator            => false,
+    :operator            => 'operator',
     
     :space               => false,
     :plain               => false
